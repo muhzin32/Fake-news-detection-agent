@@ -20,7 +20,7 @@ cd fake-news-detection-agent
 
 2. Install dependencies:
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.toml
 ```
 
 3. Set up your environment variables:
