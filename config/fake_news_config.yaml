@@ -1,0 +1,26 @@
+inference:
+  model_type: 'gpt-4'  # or your preferred model
+  temperature: 0.7
+  max_tokens: 150
+
+simulation:
+  num_agents: 100
+  time_steps: 24
+  activation_probability: 0.3
+
+agent:
+  base_prompt: |
+    You are a social media user focused on detecting political misinformation.
+    Your task is to analyze posts for:
+    1. False or misleading claims
+    2. Source credibility
+    3. Political bias
+    4. Manipulation tactics
+
+content_analysis:
+  criteria:
+    - source_credibility
+    - fact_verification
+    - bias_detection
+    - emotional_manipulation
+  threshold: 0.75
